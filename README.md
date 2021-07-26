@@ -1,6 +1,7 @@
 # road-to-glory-leetcode
-My journey of LeetCoding.
-I borrowed the phrase Road to Glory from FIFA, where it refers to building an awesome team through grinding and starting from nothing. 
+My journey of LeetCoding.\
+I borrowed the phrase Road to Glory from FIFA, where it refers to building an awesome team through many hours of grinding.\
+I did 35 questions before creating this repo, and now I'm aiming to do 5 questions (2 easy + 3 medium ones) per day.
 
 Questions I did:
 * P20. Valid Parentheses - Just thought I should do a string question. I used stack, but I saw a very interesting solution that calls replace on paretheses repeatedly. July 25, 21
