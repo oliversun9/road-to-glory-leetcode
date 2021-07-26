@@ -1,5 +1,5 @@
 # road-to-glory-leetcode
-My journey of LeetCoding
+My journey of LeetCoding.
 I borrowed the phrase Road to Glory from FIFA, where it refers to building an awesome team through grinding and starting from nothing. 
 
 Questions I did:
