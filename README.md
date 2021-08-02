@@ -35,7 +35,12 @@ Questions I did:
 * P215. Kth Largest Element in an Array. I used make_heap keeping a heap of size roughly n but I learned that I can also use a min heap to keep track of the largest k elements, and that functions partial_sort and nth_element exist. July 31, 20
 * P226. Invert Binary Tree - I used recursion at first then redid the problem with queue/BFS. July 26, 2021
 * P236. Lowest Common Ancestor of a Binary Tree. I did it by defining another dfs function to traverse the tree, but I saw a great solution that exapands the meaning of the solution function. July 31, 21
+* P300. Longest Increasing Subsequence. I used dp with in n squared time but it’s really slow on the tests. I learned that the nlogn method keeps values in the resulting array/vectors as small as possible. Aug 1, 21
+* P328. Odd Even Linked List. Straightforward. Aug 1, 21
+* P338. Counting Bits. I did it in O(n) time in one pass using k/2. I saw another solution that keeps track of the highest set big, which updates at 1, 2, 4, 8…, which is very cool. Aug 1, 21
 * P404. Sum of Left Leaves - I used recursion, but could have used a stack for iteration. July 28, 2021
 * P448. Find All Numbers Disappeared in an Array - I did it in the most straightforward way, so O(n) time and O(n) space, but the good solutions negate values at indices that appear in the array, very smart. July 29, 21
 * P572. Subtree of Another Tree - I did it with a straghtforward recursion, but a smarter method I saw converted both trees to strings and check if the shorter one is a substring. July 30, 21
 * P557. Reverse Words in a String III - Two iterators solved it. There are solutions in other languages using built-in string functions, but that’s not the case for C++. July 30, 21
+* P589. N-ary Tree Preorder Traversal. Just a dfs question. Aug 1, 21
+* P605. Can Place Flowers. Greedy. Aug 1, 21
