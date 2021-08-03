@@ -24,9 +24,11 @@ Questions I did:
 * P116. Populating Next Right Pointers in Each Node - I did it with DFS recursion at first, but it was not fast enough. Then I used queue/BFS, still not faster. Then I traversed the tree in constant space taking advantage of 'next', and it's finally faster. - July 27, 21
 * P117. Populating Next Right Pointers in Each Node II - I did it with constant space using next, but each node is visited quite a few times (3 I think?). A mucher better and cleaner approach is to loop on the higher level instead fo the lower level. - July 27, 21
 * P118. Pascal's Triangle - I did it by inserting an element one by one for each row. A better solution I saw modified a copy of the last row, adding the last two entries and starting from the last element to avoid inserting 1 at the beginning. - July 27, 21
+* P129. Sum Root to Leaf Numbers. Backtracking. Aug 2, 21
 * P136. Single Number - Initially, I didn't know it's bit manipulation and had a hard time figuring out a solution of linear time and constant space. It never occurred to me XOR is commutative haha. 
 * P141. Linked List Cycle - It’s the easier version of a problem I did yesterday or on Thursday. July 31, 21
 * P142. Linked List Cycle II -  I did using O(n) space, which is poor. Then I read a genius solution that uses two pointers. It's like two cars racing each other. - July 30, 21
+* P144. Binary Tree Preorder Traversal. Basic. Aug 2, 21
 * P150. Evaluate Reverse Polish Notation - I finished very quickly but one sample test wouldn’t pass and I spent so much time debugging it! I tried getting vscode c++ debugger to work but something was missing for arm64 and then I thought i should use lldb on command line. Just when I was about to do that, I realized that I’d been treating negative numbers as the minus operator! I solved it without using a stack, I used recursion instead. I used a pointer (actually reference) to represent the end of the subarray so I didn’t have to modify the given vector.  July 30, 21
 * P169. Majority Element. I usd nth element, but I saw many different solutions to this question: divide and conquer, Moore’s voting algorithm (very smart) and even bit manipulation! July 31, 20
 * P200. Number of Islands -  I did it with dfs, with seems standard. July 30, 21
@@ -35,12 +37,15 @@ Questions I did:
 * P215. Kth Largest Element in an Array. I used make_heap keeping a heap of size roughly n but I learned that I can also use a min heap to keep track of the largest k elements, and that functions partial_sort and nth_element exist. July 31, 20
 * P226. Invert Binary Tree - I used recursion at first then redid the problem with queue/BFS. July 26, 2021
 * P236. Lowest Common Ancestor of a Binary Tree. I did it by defining another dfs function to traverse the tree, but I saw a great solution that exapands the meaning of the solution function. July 31, 21
+* P268. Missing Number. Fun bit manipulation. Aug 2, 21
 * P300. Longest Increasing Subsequence. I used dp with in n squared time but it’s really slow on the tests. I learned that the nlogn method keeps values in the resulting array/vectors as small as possible. Aug 1, 21
 * P328. Odd Even Linked List. Straightforward. Aug 1, 21
 * P338. Counting Bits. I did it in O(n) time in one pass using k/2. I saw another solution that keeps track of the highest set big, which updates at 1, 2, 4, 8…, which is very cool. Aug 1, 21
+* 347. Top K Frequent Elements. I used heap, but bucket sort seems faster. Aug 2, 21
 * P404. Sum of Left Leaves - I used recursion, but could have used a stack for iteration. July 28, 2021
 * P448. Find All Numbers Disappeared in an Array - I did it in the most straightforward way, so O(n) time and O(n) space, but the good solutions negate values at indices that appear in the array, very smart. July 29, 21
 * P572. Subtree of Another Tree - I did it with a straghtforward recursion, but a smarter method I saw converted both trees to strings and check if the shorter one is a substring. July 30, 21
 * P557. Reverse Words in a String III - Two iterators solved it. There are solutions in other languages using built-in string functions, but that’s not the case for C++. July 30, 21
 * P589. N-ary Tree Preorder Traversal. Just a dfs question. Aug 1, 21
 * P605. Can Place Flowers. Greedy. Aug 1, 21
+* P1306. Jump Game III. DFS. Aug 2, 21
