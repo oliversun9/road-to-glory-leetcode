@@ -44,8 +44,13 @@ Questions I did:
 * 347. Top K Frequent Elements. I used heap, but bucket sort seems faster. Aug 2, 21
 * P404. Sum of Left Leaves - I used recursion, but could have used a stack for iteration. July 28, 2021
 * P448. Find All Numbers Disappeared in an Array - I did it in the most straightforward way, so O(n) time and O(n) space, but the good solutions negate values at indices that appear in the array, very smart. July 29, 21
+* P454. 4Sum II. I ‘merged’ the first two and then iterate over the last two to find quadruples, and it’s a pretty common method. Aug 3, 21
+* P525. Contiguous Array. I keep track of the difference between numbers 0’s and 1’s in \[0, k). Then find the pair with same difference that’s farthest apart, which happened to be the standard method haha. Aug 3, 21
 * P572. Subtree of Another Tree - I did it with a straghtforward recursion, but a smarter method I saw converted both trees to strings and check if the shorter one is a substring. July 30, 21
 * P557. Reverse Words in a String III - Two iterators solved it. There are solutions in other languages using built-in string functions, but that’s not the case for C++. July 30, 21
 * P589. N-ary Tree Preorder Traversal. Just a dfs question. Aug 1, 21
 * P605. Can Place Flowers. Greedy. Aug 1, 21
+* P617. Merge Two Binary Trees. Recursion. Aug 3, 21
+* P658. Find K Closest Elements. I did it by finding the closest element first and then finding the next closest element, very boring. A much more interesting solution is the top-voted one, which treats the result as a slider window and performs a modified binary search, very smart. Aug 3, 21
+* P665. Non-decreasing Array. I could’ve use less conditions. Aug 3, 21
 * P1306. Jump Game III. DFS. Aug 2, 21
