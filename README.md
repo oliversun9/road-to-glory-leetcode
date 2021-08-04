@@ -41,7 +41,7 @@ Questions I did:
 * P300. Longest Increasing Subsequence. I used dp with in n squared time but it’s really slow on the tests. I learned that the nlogn method keeps values in the resulting array/vectors as small as possible. Aug 1, 21
 * P328. Odd Even Linked List. Straightforward. Aug 1, 21
 * P338. Counting Bits. I did it in O(n) time in one pass using k/2. I saw another solution that keeps track of the highest set big, which updates at 1, 2, 4, 8…, which is very cool. Aug 1, 21
-* 347. Top K Frequent Elements. I used heap, but bucket sort seems faster. Aug 2, 21
+* P347. Top K Frequent Elements. I used heap, but bucket sort seems faster. Aug 2, 21
 * P404. Sum of Left Leaves - I used recursion, but could have used a stack for iteration. July 28, 2021
 * P448. Find All Numbers Disappeared in an Array - I did it in the most straightforward way, so O(n) time and O(n) space, but the good solutions negate values at indices that appear in the array, very smart. July 29, 21
 * P454. 4Sum II. I ‘merged’ the first two and then iterate over the last two to find quadruples, and it’s a pretty common method. Aug 3, 21
