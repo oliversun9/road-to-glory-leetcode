@@ -26,6 +26,7 @@ Questions I did:
 * P118. Pascal's Triangle - I did it by inserting an element one by one for each row. A better solution I saw modified a copy of the last row, adding the last two entries and starting from the last element to avoid inserting 1 at the beginning. - July 27, 21
 * P129. Sum Root to Leaf Numbers. Backtracking. Aug 2, 21
 * P136. Single Number - Initially, I didn't know it's bit manipulation and had a hard time figuring out a solution of linear time and constant space. It never occurred to me XOR is commutative haha. 
+* P139. Word Break. I did it with dp but I saw an interesting solution using BFS with a queue. Aug 4, 21
 * P141. Linked List Cycle - It’s the easier version of a problem I did yesterday or on Thursday. July 31, 21
 * P142. Linked List Cycle II -  I did using O(n) space, which is poor. Then I read a genius solution that uses two pointers. It's like two cars racing each other. - July 30, 21
 * P144. Binary Tree Preorder Traversal. Basic. Aug 2, 21
@@ -53,4 +54,8 @@ Questions I did:
 * P617. Merge Two Binary Trees. Recursion. Aug 3, 21
 * P658. Find K Closest Elements. I did it by finding the closest element first and then finding the next closest element, very boring. A much more interesting solution is the top-voted one, which treats the result as a slider window and performs a modified binary search, very smart. Aug 3, 21
 * P665. Non-decreasing Array. I could’ve use less conditions. Aug 3, 21
+* P674. Longest Continuous Increasing Subsequence. DP in linear time, same as the stock question. Aug 4, 21
+* P703. Kth Largest Element in a Stream. Two heaps. Aug 4, 21
+* P763. Partition Labels.(so that each letter appears in at most one partition) I kept track of both low and high, but high alone is enough. Aug 4, 21
+* P1171. Remove Zero Sum Consecutive Nodes from Linked List. One pass. Same as the two top voted solutions. Aug 4, 21
 * P1306. Jump Game III. DFS. Aug 2, 21
