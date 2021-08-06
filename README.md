@@ -25,6 +25,7 @@ Questions I did:
 * P117. Populating Next Right Pointers in Each Node II - I did it with constant space using next, but each node is visited quite a few times (3 I think?). A mucher better and cleaner approach is to loop on the higher level instead fo the lower level. - July 27, 21
 * P118. Pascal's Triangle - I did it by inserting an element one by one for each row. A better solution I saw modified a copy of the last row, adding the last two entries and starting from the last element to avoid inserting 1 at the beginning. - July 27, 21
 * P129. Sum Root to Leaf Numbers. Backtracking. Aug 2, 21
+* P133. Clone Graph. I though my solution of iterative DFS would be really slow, but it ended up having a decent run time. Other solutions are BFS with a queue and DFS with recursion. Aug 5, 21
 * P136. Single Number - Initially, I didn't know it's bit manipulation and had a hard time figuring out a solution of linear time and constant space. It never occurred to me XOR is commutative haha. 
 * P139. Word Break. I did it with dp but I saw an interesting solution using BFS with a queue. Aug 4, 21
 * P141. Linked List Cycle - It’s the easier version of a problem I did yesterday or on Thursday. July 31, 21
@@ -34,15 +35,19 @@ Questions I did:
 * P169. Majority Element. I usd nth element, but I saw many different solutions to this question: divide and conquer, Moore’s voting algorithm (very smart) and even bit manipulation! July 31, 20
 * P200. Number of Islands -  I did it with dfs, with seems standard. July 30, 21
 * P205. Isomorphic Strings - I stored character replacement in two maps but it's not fast enough, and better solutions store the last seen position of pair in two vectors. I like how it has dp flavor in it. - July 29, 21
+* P206. Reverse Linked List. I did it with iteration but I learned how to do it recursively from discussions - the key is that head points to the end of the reversed rest of the list. Aug 5, 21
 * P207. Course Schedule. I used dfs. Kahn’s algorithm is much smarter. July 31, 20
 * P215. Kth Largest Element in an Array. I used make_heap keeping a heap of size roughly n but I learned that I can also use a min heap to keep track of the largest k elements, and that functions partial_sort and nth_element exist. July 31, 20
+* P217. Contains Duplicate. Pretty easy. Aug 5, 21
 * P226. Invert Binary Tree - I used recursion at first then redid the problem with queue/BFS. July 26, 2021
 * P236. Lowest Common Ancestor of a Binary Tree. I did it by defining another dfs function to traverse the tree, but I saw a great solution that exapands the meaning of the solution function. July 31, 21
 * P268. Missing Number. Fun bit manipulation. Aug 2, 21
 * P300. Longest Increasing Subsequence. I used dp with in n squared time but it’s really slow on the tests. I learned that the nlogn method keeps values in the resulting array/vectors as small as possible. Aug 1, 21
+* P322. Coin Change. DP problem. Changing vector to array makes it so much faster. Since I didn’t need to add elements to the vector,  I should have used array to begin with. Aug 5, 21
 * P328. Odd Even Linked List. Straightforward. Aug 1, 21
 * P338. Counting Bits. I did it in O(n) time in one pass using k/2. I saw another solution that keeps track of the highest set big, which updates at 1, 2, 4, 8…, which is very cool. Aug 1, 21
 * P347. Top K Frequent Elements. I used heap, but bucket sort seems faster. Aug 2, 21
+* P371. Sum of Two Integers. I learned a lot from a discussion post that reviewed many different bit manipulation problems. I think it even covers more stuff than EPI’s chapter 2 does. Aug 5, 21
 * P404. Sum of Left Leaves - I used recursion, but could have used a stack for iteration. July 28, 2021
 * P448. Find All Numbers Disappeared in an Array - I did it in the most straightforward way, so O(n) time and O(n) space, but the good solutions negate values at indices that appear in the array, very smart. July 29, 21
 * P454. 4Sum II. I ‘merged’ the first two and then iterate over the last two to find quadruples, and it’s a pretty common method. Aug 3, 21
