@@ -1,11 +1,12 @@
 # road-to-glory-leetcode
-My journey of LeetCoding.\
+My journey of LeetCoding. July 25 - present \
 I borrowed the phrase Road to Glory from FIFA, where it refers to building an awesome team through many hours of grinding.\
 I did 35 questions before creating this repo, and now I'm aiming to do 5 questions (2 easy + 3 medium) per day.
 
 Questions I did:
 * P17. Letter Combinations of a Phone Number - I solved it by representing an n-dimensional array with a 1D vector, but I saw a much superior method using queue/BFS. July 26, 21
 * P20. Valid Parentheses - Just thought I should do a string question. I used stack, but I saw a very interesting solution that calls replace on paretheses repeatedly. July 25, 21
+* P23. Merge k Sorted Lists. Make heap in place, also used a dummy head. Aug 6, 21
 * P31. Next Permutation - A fun question but not too hard (it's medium after all). The question kind of gave away its solution when it says if there is no bigger permutation, revert it. It happened to be the same as the top voted solution. I also saw a very cool solution that uses a tree. I implemented my own reverse function because I sort of forgot I could use reverse from the standard library. July 26, 21
 * P33. Search in Rotated Sorted Array - I solved using binary search, but my favorite solution from discussions uses infinity to represent the value in the middle. the top voted solution using read mid is also nice. - July 28, 21
 * P34. Find First and Last Position of Element in Sorted Array  - July 28, 21
@@ -14,6 +15,7 @@ Questions I did:
 * P62. Unique Paths - I used dp with 2D array but it can be improved using only one array/vector.  July 25, 21
 * P63. Unique Paths II - I modified the given matrix but I probably shouldn't have. July 25, 21
 * P64. Minimum Path Sum - My DP problem of the day, but unfortunately greedy doesn't solve it. July 26, 21
+* P73. Set Matrix Zeroes. The constant space solution not too hard to come up with, but took me a little while, probably more than ten minutes. I should've done it faster. Aug 6, 21
 * P75. Sort Colors - I used the four-subarrays method. July 29, 21
 * P91. Decode Ways - Essentially fibonacci number with checks. July 27, 21
 * P106. Construct Binary Tree from Inorder and Postorder Traversal - My solution perfomed a search in each iteration but then i learned from other solutions that store the results in a map is a better idea. - July 29, 21
@@ -24,6 +26,7 @@ Questions I did:
 * P116. Populating Next Right Pointers in Each Node - I did it with DFS recursion at first, but it was not fast enough. Then I used queue/BFS, still not faster. Then I traversed the tree in constant space taking advantage of 'next', and it's finally faster. - July 27, 21
 * P117. Populating Next Right Pointers in Each Node II - I did it with constant space using next, but each node is visited quite a few times (3 I think?). A mucher better and cleaner approach is to loop on the higher level instead fo the lower level. - July 27, 21
 * P118. Pascal's Triangle - I did it by inserting an element one by one for each row. A better solution I saw modified a copy of the last row, adding the last two entries and starting from the last element to avoid inserting 1 at the beginning. - July 27, 21
+* P124. Binary Tree Maximum Path Sum. I dfs the tree, store max path sum that ends at this node in node->val and the recursive function returns the max path (any kind). A smarter solution I read defines helper function that only returns path sum that ends here, but updates a reference to the max sum of any path. Aug 6, 21
 * P129. Sum Root to Leaf Numbers. Backtracking. Aug 2, 21
 * P133. Clone Graph. I though my solution of iterative DFS would be really slow, but it ended up having a decent run time. Other solutions are BFS with a queue and DFS with recursion. Aug 5, 21
 * P136. Single Number - Initially, I didn't know it's bit manipulation and had a hard time figuring out a solution of linear time and constant space. It never occurred to me XOR is commutative haha. 
@@ -41,6 +44,8 @@ Questions I did:
 * P217. Contains Duplicate. Pretty easy. Aug 5, 21
 * P226. Invert Binary Tree - I used recursion at first then redid the problem with queue/BFS. July 26, 2021
 * P236. Lowest Common Ancestor of a Binary Tree. I did it by defining another dfs function to traverse the tree, but I saw a great solution that exapands the meaning of the solution function. July 31, 21
+* P238. Product of Array Except Self. The solution I came was the same as the top voted one, used contant space and O(n) time. Aug 6, 21
+* P242. Valid Anagram. Sort and compare or store in map. Aug 6, 21
 * P268. Missing Number. Fun bit manipulation. Aug 2, 21
 * P300. Longest Increasing Subsequence. I used dp with in n squared time but it’s really slow on the tests. I learned that the nlogn method keeps values in the resulting array/vectors as small as possible. Aug 1, 21
 * P322. Coin Change. DP problem. Changing vector to array makes it so much faster. Since I didn’t need to add elements to the vector,  I should have used array to begin with. Aug 5, 21
