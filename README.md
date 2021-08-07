@@ -1,7 +1,7 @@
 # road-to-glory-leetcode
 My journey of LeetCoding. July 25 - present \
 I borrowed the phrase Road to Glory from FIFA, where it refers to building an awesome team through many hours of grinding.\
-I did 35 questions before creating this repo, and now I'm aiming to do 5 questions (2 easy + 3 medium) per day.
+I did around 30 questions before creating this repo, and now I'm aiming to do 5 questions (2 easy + 3 medium) per day.
 
 Questions I did:
 * P17. Letter Combinations of a Phone Number - I solved it by representing an n-dimensional array with a 1D vector, but I saw a much superior method using queue/BFS. July 26, 21
