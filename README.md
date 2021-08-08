@@ -1,7 +1,7 @@
 # road-to-glory-leetcode
 My journey of LeetCoding. July 25 - present \
 I borrowed the phrase Road to Glory from FIFA, where it refers to building an awesome team through many hours of grinding.\
-I did around 30 questions before creating this repo, and now I'm aiming to do 5 questions (2 easy + 3 medium) per day.
+I did around 30 questions before creating this repo, and now I'm aiming to do 5 questions per day.
 
 Questions I did:
 * P17. Letter Combinations of a Phone Number - I solved it by representing an n-dimensional array with a 1D vector, but I saw a much superior method using queue/BFS. July 26, 21
@@ -27,6 +27,7 @@ Questions I did:
 * P117. Populating Next Right Pointers in Each Node II - I did it with constant space using next, but each node is visited quite a few times (3 I think?). A mucher better and cleaner approach is to loop on the higher level instead fo the lower level. - July 27, 21
 * P118. Pascal's Triangle - I did it by inserting an element one by one for each row. A better solution I saw modified a copy of the last row, adding the last two entries and starting from the last element to avoid inserting 1 at the beginning. - July 27, 21
 * P124. Binary Tree Maximum Path Sum. I dfs the tree, store max path sum that ends at this node in node->val and the recursive function returns the max path (any kind). A smarter solution I read defines helper function that only returns path sum that ends here, but updates a reference to the max sum of any path. Aug 6, 21
+* P128. Longest Consecutive Sequence. Hash map. Aug 7, 21
 * P129. Sum Root to Leaf Numbers. Backtracking. Aug 2, 21
 * P133. Clone Graph. I though my solution of iterative DFS would be really slow, but it ended up having a decent run time. Other solutions are BFS with a queue and DFS with recursion. Aug 5, 21
 * P136. Single Number - Initially, I didn't know it's bit manipulation and had a hard time figuring out a solution of linear time and constant space. It never occurred to me XOR is commutative haha. 
@@ -35,7 +36,9 @@ Questions I did:
 * P142. Linked List Cycle II -  I did using O(n) space, which is poor. Then I read a genius solution that uses two pointers. It's like two cars racing each other. - July 30, 21
 * P144. Binary Tree Preorder Traversal. Basic. Aug 2, 21
 * P150. Evaluate Reverse Polish Notation - I finished very quickly but one sample test wouldn’t pass and I spent so much time debugging it! I tried getting vscode c++ debugger to work but something was missing for arm64 and then I thought i should use lldb on command line. Just when I was about to do that, I realized that I’d been treating negative numbers as the minus operator! I solved it without using a stack, I used recursion instead. I used a pointer (actually reference) to represent the end of the subarray so I didn’t have to modify the given vector.  July 30, 21
+* P153. Find Minimum in Rotated Sorted Array. Binary search. Did the harder version before. Aug 7, 21
 * P169. Majority Element. I usd nth element, but I saw many different solutions to this question: divide and conquer, Moore’s voting algorithm (very smart) and even bit manipulation! July 31, 20
+* P191. Number of 1 Bits. I did it by repeatedly clearing the lowest set bit. Other ways include keep dividing by two. Aug 7, 21
 * P200. Number of Islands -  I did it with dfs, with seems standard. July 30, 21
 * P205. Isomorphic Strings - I stored character replacement in two maps but it's not fast enough, and better solutions store the last seen position of pair in two vectors. I like how it has dp flavor in it. - July 29, 21
 * P206. Reverse Linked List. I did it with iteration but I learned how to do it recursively from discussions - the key is that head points to the end of the reversed rest of the list. Aug 5, 21
@@ -53,6 +56,7 @@ Questions I did:
 * P338. Counting Bits. I did it in O(n) time in one pass using k/2. I saw another solution that keeps track of the highest set big, which updates at 1, 2, 4, 8…, which is very cool. Aug 1, 21
 * P347. Top K Frequent Elements. I used heap, but bucket sort seems faster. Aug 2, 21
 * P371. Sum of Two Integers. I learned a lot from a discussion post that reviewed many different bit manipulation problems. I think it even covers more stuff than EPI’s chapter 2 does. Aug 5, 21
+* P377. Combination Sum IV. I made an array of int to store dp subproblem results, but int is not big enough sometimes. Unsigned int fixes it. Aug 7, 21
 * P404. Sum of Left Leaves - I used recursion, but could have used a stack for iteration. July 28, 2021
 * P448. Find All Numbers Disappeared in an Array - I did it in the most straightforward way, so O(n) time and O(n) space, but the good solutions negate values at indices that appear in the array, very smart. July 29, 21
 * P454. 4Sum II. I ‘merged’ the first two and then iterate over the last two to find quadruples, and it’s a pretty common method. Aug 3, 21
@@ -67,5 +71,6 @@ Questions I did:
 * P674. Longest Continuous Increasing Subsequence. DP in linear time, same as the stock question. Aug 4, 21
 * P703. Kth Largest Element in a Stream. Two heaps. Aug 4, 21
 * P763. Partition Labels.(so that each letter appears in at most one partition) I kept track of both low and high, but high alone is enough. Aug 4, 21
+* P1143. Longest Common Subsequence. I used a 2D vector to store dp subproblem, but only a 1D vector is sufficient. Aug 7, 21 
 * P1171. Remove Zero Sum Consecutive Nodes from Linked List. One pass. Same as the two top voted solutions. Aug 4, 21
 * P1306. Jump Game III. DFS. Aug 2, 21
