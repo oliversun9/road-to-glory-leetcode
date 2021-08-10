@@ -4,13 +4,16 @@ I borrowed the phrase Road to Glory from FIFA, where it refers to building an aw
 I did around 30 questions before creating this repo, and now I'm aiming to do 5 questions per day.
 
 Questions I did:
+* P15. 3Sum. Sort and two-sum n times. Aug 9, 21
 * P17. Letter Combinations of a Phone Number - I solved it by representing an n-dimensional array with a 1D vector, but I saw a much superior method using queue/BFS. July 26, 21
+* P19. Remove Nth Node From End of List. Deja vu. Aug 9, 21
 * P20. Valid Parentheses - Just thought I should do a string question. I used stack, but I saw a very interesting solution that calls replace on paretheses repeatedly. July 25, 21
 * P23. Merge k Sorted Lists. Make heap in place, also used a dummy head. Aug 6, 21
 * P31. Next Permutation - A fun question but not too hard (it's medium after all). The question kind of gave away its solution when it says if there is no bigger permutation, revert it. It happened to be the same as the top voted solution. I also saw a very cool solution that uses a tree. I implemented my own reverse function because I sort of forgot I could use reverse from the standard library. July 26, 21
 * P33. Search in Rotated Sorted Array - I solved using binary search, but my favorite solution from discussions uses infinity to represent the value in the middle. the top voted solution using read mid is also nice. - July 28, 21
 * P34. Find First and Last Position of Element in Sorted Array  - July 28, 21
 * P46. Permutations - I did it using a method unrelated to backtracking, because I'm not familiar with backtracking. This the second time I heard of back tracking, and I saw some good backtracking solutions. It looks like DFS. I need to get more used to backtracking. - July 28, 21
+* P54. Spiral Matrix. Straightforward question but my solution is not elegant at all. A better solution that I read updates a boundary after traversing a row or column. A very smart python solution prints top row and rotate the matrix! Aug 9, 21
 * P56. Merge Intervals - I sorted and then merge, which is also the top voted answer. July 29, 21
 * P62. Unique Paths - I used dp with 2D array but it can be improved using only one array/vector.  July 25, 21
 * P63. Unique Paths II - I modified the given matrix but I probably shouldn't have. July 25, 21
@@ -39,6 +42,7 @@ Questions I did:
 * P153. Find Minimum in Rotated Sorted Array. Binary search. Did the harder version before. Aug 7, 21
 * P169. Majority Element. I usd nth element, but I saw many different solutions to this question: divide and conquer, Moore’s voting algorithm (very smart) and even bit manipulation! July 31, 20
 * P191. Number of 1 Bits. I did it by repeatedly clearing the lowest set bit. Other ways include keep dividing by two. Aug 7, 21
+* P198. House Robber. Only need to look at the last two, pretty easy. Aug 9, 21
 * P200. Number of Islands -  I did it with dfs, with seems standard. July 30, 21
 * P205. Isomorphic Strings - I stored character replacement in two maps but it's not fast enough, and better solutions store the last seen position of pair in two vectors. I like how it has dp flavor in it. - July 29, 21
 * P206. Reverse Linked List. I did it with iteration but I learned how to do it recursively from discussions - the key is that head points to the end of the reversed rest of the list. Aug 5, 21
@@ -58,6 +62,7 @@ Questions I did:
 * P371. Sum of Two Integers. I learned a lot from a discussion post that reviewed many different bit manipulation problems. I think it even covers more stuff than EPI’s chapter 2 does. Aug 5, 21
 * P377. Combination Sum IV. I made an array of int to store dp subproblem results, but int is not big enough sometimes. Unsigned int fixes it. Aug 7, 21
 * P404. Sum of Left Leaves - I used recursion, but could have used a stack for iteration. July 28, 2021
+* P435. Non-overlapping Intervals. My solution is asymptotically fast as the fast solutions (the sample solutions from the top percentile), nlog(n). Actually my solution is almost exactly the same as the sample solution that finished in 0ms (if anything, mine should be faster in theory). However, mine finish in around 400ms! I copied and pasted two very fast sample solutions (0ms and 4ms) and submitted those, but strangely they also finished in around 400ms. Aug 9, 21
 * P448. Find All Numbers Disappeared in an Array - I did it in the most straightforward way, so O(n) time and O(n) space, but the good solutions negate values at indices that appear in the array, very smart. July 29, 21
 * P454. 4Sum II. I ‘merged’ the first two and then iterate over the last two to find quadruples, and it’s a pretty common method. Aug 3, 21
 * P525. Contiguous Array. I keep track of the difference between numbers 0’s and 1’s in \[0, k). Then find the pair with same difference that’s farthest apart, which happened to be the standard method haha. Aug 3, 21
