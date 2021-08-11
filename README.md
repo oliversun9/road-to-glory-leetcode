@@ -8,6 +8,7 @@ Questions I did:
 * P17. Letter Combinations of a Phone Number - I solved it by representing an n-dimensional array with a 1D vector, but I saw a much superior method using queue/BFS. July 26, 21
 * P19. Remove Nth Node From End of List. Deja vu. Aug 9, 21
 * P20. Valid Parentheses - Just thought I should do a string question. I used stack, but I saw a very interesting solution that calls replace on paretheses repeatedly. July 25, 21
+* P21. Merge Two Sorted Lists.  Aug 10, 21
 * P23. Merge k Sorted Lists. Make heap in place, also used a dummy head. Aug 6, 21
 * P31. Next Permutation - A fun question but not too hard (it's medium after all). The question kind of gave away its solution when it says if there is no bigger permutation, revert it. It happened to be the same as the top voted solution. I also saw a very cool solution that uses a tree. I implemented my own reverse function because I sort of forgot I could use reverse from the standard library. July 26, 21
 * P33. Search in Rotated Sorted Array - I solved using binary search, but my favorite solution from discussions uses infinity to represent the value in the middle. the top voted solution using read mid is also nice. - July 28, 21
@@ -18,6 +19,7 @@ Questions I did:
 * P62. Unique Paths - I used dp with 2D array but it can be improved using only one array/vector.  July 25, 21
 * P63. Unique Paths II - I modified the given matrix but I probably shouldn't have. July 25, 21
 * P64. Minimum Path Sum - My DP problem of the day, but unfortunately greedy doesn't solve it. July 26, 21
+* P66. Plus One. A smarter solution only adds 0 at the end when necessary.  Aug 10, 21
 * P73. Set Matrix Zeroes. The constant space solution not too hard to come up with, but took me a little while, probably more than ten minutes. I should've done it faster. Aug 6, 21
 * P75. Sort Colors - I used the four-subarrays method. July 29, 21
 * P91. Decode Ways - Essentially fibonacci number with checks. July 27, 21
@@ -50,6 +52,8 @@ Questions I did:
 * P215. Kth Largest Element in an Array. I used make_heap keeping a heap of size roughly n but I learned that I can also use a min heap to keep track of the largest k elements, and that functions partial_sort and nth_element exist. July 31, 20
 * P217. Contains Duplicate. Pretty easy. Aug 5, 21
 * P226. Invert Binary Tree - I used recursion at first then redid the problem with queue/BFS. July 26, 2021
+* P230. Kth Smallest Element in a BST. Aug 10, 21
+* P231. Power of Two.  Aug 10, 21
 * P236. Lowest Common Ancestor of a Binary Tree. I did it by defining another dfs function to traverse the tree, but I saw a great solution that exapands the meaning of the solution function. July 31, 21
 * P238. Product of Array Except Self. The solution I came was the same as the top voted one, used contant space and O(n) time. Aug 6, 21
 * P242. Valid Anagram. Sort and compare or store in map. Aug 6, 21
@@ -61,6 +65,7 @@ Questions I did:
 * P347. Top K Frequent Elements. I used heap, but bucket sort seems faster. Aug 2, 21
 * P371. Sum of Two Integers. I learned a lot from a discussion post that reviewed many different bit manipulation problems. I think it even covers more stuff than EPI’s chapter 2 does. Aug 5, 21
 * P377. Combination Sum IV. I made an array of int to store dp subproblem results, but int is not big enough sometimes. Unsigned int fixes it. Aug 7, 21
+* P389. Find the Difference. Aug 10, 21
 * P404. Sum of Left Leaves - I used recursion, but could have used a stack for iteration. July 28, 2021
 * P435. Non-overlapping Intervals. My solution is asymptotically fast as the fast solutions (the sample solutions from the top percentile), nlog(n). Actually my solution is almost exactly the same as the sample solution that finished in 0ms (if anything, mine should be faster in theory). However, mine finish in around 400ms! I copied and pasted two very fast sample solutions (0ms and 4ms) and submitted those, but strangely they also finished in around 400ms. Aug 9, 21
 * P448. Find All Numbers Disappeared in an Array - I did it in the most straightforward way, so O(n) time and O(n) space, but the good solutions negate values at indices that appear in the array, very smart. July 29, 21
