@@ -21,8 +21,10 @@ Questions I did:
 * P64. Minimum Path Sum - My DP problem of the day, but unfortunately greedy doesn't solve it. July 26, 21
 * P66. Plus One. A smarter solution only adds 0 at the end when necessary.  Aug 10, 21
 * P73. Set Matrix Zeroes. The constant space solution not too hard to come up with, but took me a little while, probably more than ten minutes. I should've done it faster. Aug 6, 21
+* P74. Search a 2D Matrix. Aug 11, 21
 * P75. Sort Colors - I used the four-subarrays method. July 29, 21
 * P91. Decode Ways - Essentially fibonacci number with checks. July 27, 21
+* P105. Construct Binary Tree from Preorder and Inorder Traversal. I did it the straightforward way (so sad), splitting the inorder array. A much superior solution keeps track of the stopping value and runs in constant space. The solutio using stack is also smart. Aug 11, 21
 * P106. Construct Binary Tree from Inorder and Postorder Traversal - My solution perfomed a search in each iteration but then i learned from other solutions that store the results in a map is a better idea. - July 29, 21
 * P108. Convert Sorted Array to Binary Search Tree - not difficult. July 28, 21
 * P111. Minimum Depth of Binary Tree - I used recursion (DFS), and also BFS to see if it's faster. My BFS solution was only slightly faster than my recursion solution. (220ms and 224ms) July 25, 21
@@ -39,6 +41,7 @@ Questions I did:
 * P139. Word Break. I did it with dp but I saw an interesting solution using BFS with a queue. Aug 4, 21
 * P141. Linked List Cycle - It’s the easier version of a problem I did yesterday or on Thursday. July 31, 21
 * P142. Linked List Cycle II -  I did using O(n) space, which is poor. Then I read a genius solution that uses two pointers. It's like two cars racing each other. - July 30, 21
+* P143. Reorder List. Three steps. I thought I was pretty smart for coming up with a way to find mid point in one pass, but that just turned out to be the most common way of doing it haha. Aug 11, 21
 * P144. Binary Tree Preorder Traversal. Basic. Aug 2, 21
 * P150. Evaluate Reverse Polish Notation - I finished very quickly but one sample test wouldn’t pass and I spent so much time debugging it! I tried getting vscode c++ debugger to work but something was missing for arm64 and then I thought i should use lldb on command line. Just when I was about to do that, I realized that I’d been treating negative numbers as the minus operator! I solved it without using a stack, I used recursion instead. I used a pointer (actually reference) to represent the end of the subarray so I didn’t have to modify the given vector.  July 30, 21
 * P153. Find Minimum in Rotated Sorted Array. Binary search. Did the harder version before. Aug 7, 21
@@ -49,11 +52,13 @@ Questions I did:
 * P205. Isomorphic Strings - I stored character replacement in two maps but it's not fast enough, and better solutions store the last seen position of pair in two vectors. I like how it has dp flavor in it. - July 29, 21
 * P206. Reverse Linked List. I did it with iteration but I learned how to do it recursively from discussions - the key is that head points to the end of the reversed rest of the list. Aug 5, 21
 * P207. Course Schedule. I used dfs. Kahn’s algorithm is much smarter. July 31, 20
+* P213. House Robber II. Use rob 1. Aug 11, 21
 * P215. Kth Largest Element in an Array. I used make_heap keeping a heap of size roughly n but I learned that I can also use a min heap to keep track of the largest k elements, and that functions partial_sort and nth_element exist. July 31, 20
 * P217. Contains Duplicate. Pretty easy. Aug 5, 21
 * P226. Invert Binary Tree - I used recursion at first then redid the problem with queue/BFS. July 26, 2021
 * P230. Kth Smallest Element in a BST. Aug 10, 21
 * P231. Power of Two.  Aug 10, 21
+* P235. Lowest Common Ancestor of a Binary Search Tree. Aug 11, 21
 * P236. Lowest Common Ancestor of a Binary Tree. I did it by defining another dfs function to traverse the tree, but I saw a great solution that exapands the meaning of the solution function. July 31, 21
 * P238. Product of Array Except Self. The solution I came was the same as the top voted one, used contant space and O(n) time. Aug 6, 21
 * P242. Valid Anagram. Sort and compare or store in map. Aug 6, 21
