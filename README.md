@@ -90,7 +90,7 @@ Questions I did:
 * P703. Kth Largest Element in a Stream. Two heaps. Aug 4, 21
 * P763. Partition Labels.(so that each letter appears in at most one partition) I kept track of both low and high, but high alone is enough. Aug 4, 21
 * P844. Backspace String Compare. Aug 12, 21
-* P863. All Nodes Distance K in Binary Tree. I did it in a strange way, but I should, like other, do BFS with a parent map.Aug 12, 21
+* P863. All Nodes Distance K in Binary Tree. I did it in a strange way, but I should, like others, do BFS with a parent map.Aug 12, 21
 * P1143. Longest Common Subsequence. I used a 2D vector to store dp subproblem, but only a 1D vector is sufficient. Aug 7, 21 
 * P1171. Remove Zero Sum Consecutive Nodes from Linked List. One pass. Same as the two top voted solutions. Aug 4, 21
 * P1306. Jump Game III. DFS. Aug 2, 21
