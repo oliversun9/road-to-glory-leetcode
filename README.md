@@ -48,6 +48,7 @@ Questions I did:
 * P169. Majority Element. I usd nth element, but I saw many different solutions to this question: divide and conquer, Moore’s voting algorithm (very smart) and even bit manipulation! July 31, 20
 * P191. Number of 1 Bits. I did it by repeatedly clearing the lowest set bit. Other ways include keep dividing by two. Aug 7, 21
 * P198. House Robber. Only need to look at the last two, pretty easy. Aug 9, 21
+* P199. Binary Tree Right Side View. Did it with BFS, then redid the question with DFS. Aug 12, 21
 * P200. Number of Islands -  I did it with dfs, with seems standard. July 30, 21
 * P205. Isomorphic Strings - I stored character replacement in two maps but it's not fast enough, and better solutions store the last seen position of pair in two vectors. I like how it has dp flavor in it. - July 29, 21
 * P206. Reverse Linked List. I did it with iteration but I learned how to do it recursively from discussions - the key is that head points to the end of the reversed rest of the list. Aug 5, 21
@@ -63,6 +64,7 @@ Questions I did:
 * P238. Product of Array Except Self. The solution I came was the same as the top voted one, used contant space and O(n) time. Aug 6, 21
 * P242. Valid Anagram. Sort and compare or store in map. Aug 6, 21
 * P268. Missing Number. Fun bit manipulation. Aug 2, 21
+* P283. Move Zeroes. Aug 12, 21
 * P300. Longest Increasing Subsequence. I used dp with in n squared time but it’s really slow on the tests. I learned that the nlogn method keeps values in the resulting array/vectors as small as possible. Aug 1, 21
 * P322. Coin Change. DP problem. Changing vector to array makes it so much faster. Since I didn’t need to add elements to the vector,  I should have used array to begin with. Aug 5, 21
 * P328. Odd Even Linked List. Straightforward. Aug 1, 21
@@ -81,11 +83,14 @@ Questions I did:
 * P589. N-ary Tree Preorder Traversal. Just a dfs question. Aug 1, 21
 * P605. Can Place Flowers. Greedy. Aug 1, 21
 * P617. Merge Two Binary Trees. Recursion. Aug 3, 21
+* P654. Maximum Binary Tree. I resisted the temptation to split the array and build two subarrays. From other solutions, I learned that it’s more convenient to build wrong connections between parents and children and then update them to the correct ones when pushing a new element.  Aug 12, 21
 * P658. Find K Closest Elements. I did it by finding the closest element first and then finding the next closest element, very boring. A much more interesting solution is the top-voted one, which treats the result as a slider window and performs a modified binary search, very smart. Aug 3, 21
 * P665. Non-decreasing Array. I could’ve use less conditions. Aug 3, 21
 * P674. Longest Continuous Increasing Subsequence. DP in linear time, same as the stock question. Aug 4, 21
 * P703. Kth Largest Element in a Stream. Two heaps. Aug 4, 21
 * P763. Partition Labels.(so that each letter appears in at most one partition) I kept track of both low and high, but high alone is enough. Aug 4, 21
+* P844. Backspace String Compare. Aug 12, 21
+* P863. All Nodes Distance K in Binary Tree. I did it in a strange way, but I should, like other, do BFS with a parent map.Aug 12, 21
 * P1143. Longest Common Subsequence. I used a 2D vector to store dp subproblem, but only a 1D vector is sufficient. Aug 7, 21 
 * P1171. Remove Zero Sum Consecutive Nodes from Linked List. One pass. Same as the two top voted solutions. Aug 4, 21
 * P1306. Jump Game III. DFS. Aug 2, 21
