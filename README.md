@@ -14,6 +14,7 @@ Questions I did:
 * P33. Search in Rotated Sorted Array - I solved using binary search, but my favorite solution from discussions uses infinity to represent the value in the middle. the top voted solution using read mid is also nice. - July 28, 21
 * P34. Find First and Last Position of Element in Sorted Array  - July 28, 21
 * P46. Permutations - I did it using a method unrelated to backtracking, because I'm not familiar with backtracking. This the second time I heard of back tracking, and I saw some good backtracking solutions. It looks like DFS. I need to get more used to backtracking. - July 28, 21
+* P47. Permutations II. Did it with swapping and a hash_map. I saw a solution that uses a counter, which is very smart. Aug 13, 21
 * P54. Spiral Matrix. Straightforward question but my solution is not elegant at all. A better solution that I read updates a boundary after traversing a row or column. A very smart python solution prints top row and rotate the matrix! Aug 9, 21
 * P56. Merge Intervals - I sorted and then merge, which is also the top voted answer. July 29, 21
 * P62. Unique Paths - I used dp with 2D array but it can be improved using only one array/vector.  July 25, 21
@@ -23,6 +24,7 @@ Questions I did:
 * P73. Set Matrix Zeroes. The constant space solution not too hard to come up with, but took me a little while, probably more than ten minutes. I should've done it faster. Aug 6, 21
 * P74. Search a 2D Matrix. Aug 11, 21
 * P75. Sort Colors - I used the four-subarrays method. July 29, 21
+* P78. Subsets. Did it with DFS (recursion / backtracking) and redid it with iteration. Aug 13, 21
 * P91. Decode Ways - Essentially fibonacci number with checks. July 27, 21
 * P105. Construct Binary Tree from Preorder and Inorder Traversal. I did it the straightforward way (so sad), splitting the inorder array. A much superior solution keeps track of the stopping value and runs in constant space. The solutio using stack is also smart. Aug 11, 21
 * P106. Construct Binary Tree from Inorder and Postorder Traversal - My solution perfomed a search in each iteration but then i learned from other solutions that store the results in a map is a better idea. - July 29, 21
@@ -78,6 +80,7 @@ Questions I did:
 * P448. Find All Numbers Disappeared in an Array - I did it in the most straightforward way, so O(n) time and O(n) space, but the good solutions negate values at indices that appear in the array, very smart. July 29, 21
 * P454. 4Sum II. I ‘merged’ the first two and then iterate over the last two to find quadruples, and it’s a pretty common method. Aug 3, 21
 * P525. Contiguous Array. I keep track of the difference between numbers 0’s and 1’s in \[0, k). Then find the pair with same difference that’s farthest apart, which happened to be the standard method haha. Aug 3, 21
+* P543. Diameter of Binary Tree. Aug 13, 21
 * P572. Subtree of Another Tree - I did it with a straghtforward recursion, but a smarter method I saw converted both trees to strings and check if the shorter one is a substring. July 30, 21
 * P557. Reverse Words in a String III - Two iterators solved it. There are solutions in other languages using built-in string functions, but that’s not the case for C++. July 30, 21
 * P589. N-ary Tree Preorder Traversal. Just a dfs question. Aug 1, 21
@@ -89,7 +92,9 @@ Questions I did:
 * P674. Longest Continuous Increasing Subsequence. DP in linear time, same as the stock question. Aug 4, 21
 * P703. Kth Largest Element in a Stream. Two heaps. Aug 4, 21
 * P763. Partition Labels.(so that each letter appears in at most one partition) I kept track of both low and high, but high alone is enough. Aug 4, 21
+* P784. Letter Case Permutation. Learned that BFS also works. Aug 13, 21
 * P844. Backspace String Compare. Aug 12, 21
+* P852. Peak Index in a Mountain Array. Aug 13, 21
 * P863. All Nodes Distance K in Binary Tree. I did it in a strange way, but I should, like others, do BFS with a parent map.Aug 12, 21
 * P1143. Longest Common Subsequence. I used a 2D vector to store dp subproblem, but only a 1D vector is sufficient. Aug 7, 21 
 * P1171. Remove Zero Sum Consecutive Nodes from Linked List. One pass. Same as the two top voted solutions. Aug 4, 21
