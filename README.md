@@ -13,6 +13,7 @@ Questions I did:
 * P31. Next Permutation - A fun question but not too hard (it's medium after all). The question kind of gave away its solution when it says if there is no bigger permutation, revert it. It happened to be the same as the top voted solution. I also saw a very cool solution that uses a tree. I implemented my own reverse function because I sort of forgot I could use reverse from the standard library. July 26, 21
 * P33. Search in Rotated Sorted Array - I solved using binary search, but my favorite solution from discussions uses infinity to represent the value in the middle. the top voted solution using read mid is also nice. - July 28, 21
 * P34. Find First and Last Position of Element in Sorted Array  - July 28, 21
+* P40. Combination Sum II. Aug 14, 21
 * P46. Permutations - I did it using a method unrelated to backtracking, because I'm not familiar with backtracking. This the second time I heard of back tracking, and I saw some good backtracking solutions. It looks like DFS. I need to get more used to backtracking. - July 28, 21
 * P47. Permutations II. Did it with swapping and a hash_map. I saw a solution that uses a counter, which is very smart. Aug 13, 21
 * P54. Spiral Matrix. Straightforward question but my solution is not elegant at all. A better solution that I read updates a boundary after traversing a row or column. A very smart python solution prints top row and rotate the matrix! Aug 9, 21
@@ -24,8 +25,10 @@ Questions I did:
 * P73. Set Matrix Zeroes. The constant space solution not too hard to come up with, but took me a little while, probably more than ten minutes. I should've done it faster. Aug 6, 21
 * P74. Search a 2D Matrix. Aug 11, 21
 * P75. Sort Colors - I used the four-subarrays method. July 29, 21
+* P77. Combinations. I did it recursively at first, and it was reasonably fast, but my iterative solution was really slow and wasted a lot of space. Then I learned the smart way to solve it iteratively from an 8ms solution. My takeaway: understand the question before jumping into it and creating a queue. Recursion, iteration are abstract data types tools, not ideas. Aug 14, 21
 * P78. Subsets. Did it with DFS (recursion / backtracking) and redid it with iteration. Aug 13, 21
 * P91. Decode Ways - Essentially fibonacci number with checks. July 27, 21
+* P96. Unique Binary Search Trees. Aug 14, 21
 * P105. Construct Binary Tree from Preorder and Inorder Traversal. I did it the straightforward way (so sad), splitting the inorder array. A much superior solution keeps track of the stopping value and runs in constant space. The solutio using stack is also smart. Aug 11, 21
 * P106. Construct Binary Tree from Inorder and Postorder Traversal - My solution perfomed a search in each iteration but then i learned from other solutions that store the results in a map is a better idea. - July 29, 21
 * P108. Convert Sorted Array to Binary Search Tree - not difficult. July 28, 21
@@ -71,6 +74,7 @@ Questions I did:
 * P322. Coin Change. DP problem. Changing vector to array makes it so much faster. Since I didn’t need to add elements to the vector,  I should have used array to begin with. Aug 5, 21
 * P328. Odd Even Linked List. Straightforward. Aug 1, 21
 * P338. Counting Bits. I did it in O(n) time in one pass using k/2. I saw another solution that keeps track of the highest set big, which updates at 1, 2, 4, 8…, which is very cool. Aug 1, 21
+* P342. Power of Four. Aug 14, 21
 * P347. Top K Frequent Elements. I used heap, but bucket sort seems faster. Aug 2, 21
 * P371. Sum of Two Integers. I learned a lot from a discussion post that reviewed many different bit manipulation problems. I think it even covers more stuff than EPI’s chapter 2 does. Aug 5, 21
 * P377. Combination Sum IV. I made an array of int to store dp subproblem results, but int is not big enough sometimes. Unsigned int fixes it. Aug 7, 21
@@ -79,6 +83,7 @@ Questions I did:
 * P435. Non-overlapping Intervals. My solution is asymptotically fast as the fast solutions (the sample solutions from the top percentile), nlog(n). Actually my solution is almost exactly the same as the sample solution that finished in 0ms (if anything, mine should be faster in theory). However, mine finish in around 400ms! I copied and pasted two very fast sample solutions (0ms and 4ms) and submitted those, but strangely they also finished in around 400ms. Aug 9, 21
 * P448. Find All Numbers Disappeared in an Array - I did it in the most straightforward way, so O(n) time and O(n) space, but the good solutions negate values at indices that appear in the array, very smart. July 29, 21
 * P454. 4Sum II. I ‘merged’ the first two and then iterate over the last two to find quadruples, and it’s a pretty common method. Aug 3, 21
+* P494. Target Sum. I did with recursion first but it’s way too slow (because I didn’t realize the knapsack problem). Without realizing its a dp problem, I redid the problem with iteration + backtracking (basically iterating from 00..00 to 11..11), and it was still very slow. Then I sneaked a peak at discussion titles and finally realized dp is faster. Then I did dp with 3D vector (continuous) and it became much faster, but not fast enough. I read some discussion post and learned that using map is a better idea as it doesn’t waste time and space on unreachable values. Aug 14, 21
 * P525. Contiguous Array. I keep track of the difference between numbers 0’s and 1’s in \[0, k). Then find the pair with same difference that’s farthest apart, which happened to be the standard method haha. Aug 3, 21
 * P543. Diameter of Binary Tree. Aug 13, 21
 * P572. Subtree of Another Tree - I did it with a straghtforward recursion, but a smarter method I saw converted both trees to strings and check if the shorter one is a substring. July 30, 21
